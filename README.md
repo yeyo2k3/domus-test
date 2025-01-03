@@ -53,15 +53,15 @@ Json response:
 
 Some things we'll evaluate are:
 
--Correctness: The solution should return the correct result for the given threshold, the route and query parameters should be respected.
--Fail proof: The solution should handle errors and edge cases gracefully. Negative threshold values should return an empty list. Non-number thresholds should return an error message.
--Tests: The solution should have tests.
--Use of newer technologies. We prefer Webflux before a generic Rest Template.
--Intelligent solution for pagination.
--Swagger documentation and descriptions.
--Documentation: Create a .md file explaining the solution and considerations.
--Use of external libraries that facilitate things like Lombok.
--Correct use of Spring decorators such as @Service and @Autowired.
+- Correctness: The solution should return the correct result for the given threshold, the route and query parameters should be respected.
+- Fail proof: The solution should handle errors and edge cases gracefully. Negative threshold values should return an empty list. Non-number thresholds should return an error message.
+- Tests: The solution should have tests.
+- Use of newer technologies. We prefer Webflux before a generic Rest Template.
+- Intelligent solution for pagination.
+- Swagger documentation and descriptions.
+- Documentation: Create a .md file explaining the solution and considerations.
+- Use of external libraries that facilitate things like Lombok.
+- Correct use of Spring decorators such as @Service and @Autowired.
 
 ## Submission
 
