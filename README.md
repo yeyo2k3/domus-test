@@ -30,7 +30,7 @@ Each movie record has the following schema:
 - Runtime: movie duration time in minutes
 - Genre: move genre
 - Director: movie director
-- Writer: movie writers 
+- Writer: movie writer 
 - Actors: movie actors  
 
 ##  Task
@@ -62,7 +62,7 @@ Some things we'll evaluate are:
 - Prefer newer technologies such as WebFlux over traditional RestTemplate.
 - Implement an intelligent solution for handling pagination.
 - Include Swagger documentation with detailed endpoint descriptions.
-- Documentation: Create a .md file explaining the solution and considerations.
+- Documentation: Create an .md file explaining the solution and considerations.
 - Use external libraries like Lombok ti facilitate things.
 - Correct use of Spring decorators such as @Service and @Autowired.
 
