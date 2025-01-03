@@ -2,12 +2,15 @@
 
 ## Description 
 
-In this challenge, the REST API contains information about a collection of movie released after the year 2010, directed by acclaimed directors.  
-Given the threshold value, the goal is to use the API to get the list of the names of the directors with most movies directed. Specifically, the list of names of directors with movie count strictly greater than the given threshold.   
-The list of names must be returned in alphabetical order.
+In this challenge, the REST API contains information about a collection of movies released after the year 2010, directed by acclaimed directors.
+Given a threshold value, your task is to use the API to retrieve a list of directors who have directed more movies than the specified threshold. Specifically, the API should return the names of directors whose movie count is strictly greater than the given threshold, sorted alphabetically.
 
-To access the collection of users perform HTTP GET request to:
+To access the movie collection, perform an HTTP GET request to the following endpoint:
+
+```
 https://challenge.iugolabs.com/api/movies/search?page=<pageNumber>
+```
+
 where <pageNumber> is an integer denoting the page of the results to return.
 
 The response to such request is a JSON with the following 5 fields:
@@ -30,18 +33,17 @@ Each movie record has the following schema:
 - Writer: movie writers 
 - Actors: movie actors  
 
-##  What we want you to do
+##  Task
 
-We want you to clone the repository and implement a REST API Endpoint with the template you have been given.
+Fork the provided repository and implement a REST API endpoint using the provided template:
 
 ```
 /api/directors?threshold=X
 ```
 
-The endpoint must return a list of the names of the directors whose number of movies directed is strictly greater than the given threshold.
+This endpoint must return a JSON object containing the names of directors whose number of movies directed is strictly greater than the given threshold.
 
-The directors name in the list must be ordered in alphabetical order.
-
+The names should be returned in alphabetical order.
 
 Sample : `/api/directors?threshold=4`
 
@@ -54,16 +56,18 @@ Json response:
 
 Some things we'll evaluate are:
 
-- Correctness: The solution should return the correct result for the given threshold, the route and query parameters should be respected.
+- Correctness: The solution must return accurate results based on the given threshold. Ensure the route and query parameters are handled correctly.
 - Fail proof: The solution should handle errors and edge cases gracefully. Negative threshold values should return an empty list. Non-number thresholds should return an error message.
 - Tests: The solution should have tests.
-- Use of newer technologies. We prefer Webflux before a generic Rest Template.
-- Intelligent solution for pagination.
-- Swagger documentation and descriptions.
+- Prefer newer technologies such as WebFlux over traditional RestTemplate.
+- Implement an intelligent solution for handling pagination.
+- Include Swagger documentation with detailed endpoint descriptions.
 - Documentation: Create a .md file explaining the solution and considerations.
-- Use of external libraries that facilitate things like Lombok.
+- Use external libraries like Lombok ti facilitate things.
 - Correct use of Spring decorators such as @Service and @Autowired.
 
 ## Submission
 
-Please fork the solution and then do a pull request to this repository. The pull request should contain the code and the documentation file.
+1. Fork the repository as a private repository.
+2. Implement the solution
+3. Create a pull request to the original repository containing the code and the documentation file.
