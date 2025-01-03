@@ -19,6 +19,7 @@ The response to such request is a JSON with the following 5 fields:
 - data: An array of objects containing movies returned on the requested page
 
 Each movie record has the following schema:
+
 - Title: title of the movie
 - Year: year the movie was released
 - Rated: movie rating
@@ -26,7 +27,7 @@ Each movie record has the following schema:
 - Runtime: movie duration time in minutes
 - Genre: move genre
 - Director: movie director
-- Writer: movie writers
+- Writer: movie writers 
 - Actors: movie actors  
 
 ##  What we want you to do
