@@ -63,11 +63,11 @@ Some things we'll evaluate are:
 - Implement an intelligent solution for handling pagination.
 - Include Swagger documentation with detailed endpoint descriptions.
 - Documentation: Create an .md file explaining the solution and considerations.
-- Use external libraries like Lombok ti facilitate things.
+- Use external libraries like Lombok to facilitate things.
 - Correct use of Spring decorators such as @Service and @Autowired.
 
 ## Submission
 
-1. Fork the repository as a private repository.
-2. Implement the solution
-3. Create a pull request to the original repository containing the code and the documentation file.
+1. Fork the repository as a public repository.
+2. Implement the solution.
+3. Link the repository to the person who sent you the challenge.
